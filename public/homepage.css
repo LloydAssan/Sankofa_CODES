@@ -1156,6 +1156,10 @@ ul, ol {
   text-align: left;
 }
 
+form{
+  
+}
+
 @media (min-width: 0px) and (max-width: 767px) {
   .img-responsive {
     width: auto;

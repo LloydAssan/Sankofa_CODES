@@ -42,9 +42,9 @@
 <h1 class="question form-group"><%= question.question %></h1>
 
 <section class="form form-group">
-<form action="/answer" method="POST">
+<form class=""action="/answer" method="POST">
 <input type="hidden" name="num" value="<%= num %>">
-<input type="text" name="answer">
+<input type="text" placeholder="Enter Answer Here"name="answer">
 <button type="submit" name="button" class="answerBtn">Answer</button>
 </form>
 </section>

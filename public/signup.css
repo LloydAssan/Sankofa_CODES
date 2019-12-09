@@ -22,7 +22,7 @@ h1{
     font-family: "Anton", sans-serif;
     font-weight: 900;
     color: #FD5F00;
-    margin-left: -160%;
+    /* margin-left: -160%; */
     text-shadow: 2px 2px white;
 }
 
