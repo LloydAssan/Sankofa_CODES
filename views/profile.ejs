@@ -49,7 +49,7 @@
   <div class="questSec">
     <div class="" id="msgboard">
         <h3>QUESTIONS</h3>
-        <ul class="messages">
+        <ol class="messages">
         <% for(var i=0; i<messages.length; i++) { %>
           <li class="message">
             <span><%= messages[i].name %></span>
@@ -57,7 +57,7 @@
             <span class="delete" aria-hidden="true">Delete</span>
           </li>
         <% } %>
-        </ul>
+      </ol>
 
         <h2>What is your question for today?</h2>
       <% if (user.local.email) { %>
