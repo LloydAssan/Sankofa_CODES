@@ -11,7 +11,6 @@ const passport = require('passport');
 const flash    = require('connect-flash');
 const multer = require('multer');
 const ObjectId = require('mongodb').ObjectID
-
 const morgan       = require('morgan');
 const cookieParser = require('cookie-parser');
 const bodyParser   = require('body-parser');
@@ -20,8 +19,6 @@ const session      = require('express-session');
 //i have own module that i would like to use
 const configDB = require('./config/database.js');
 // const db
-
-
 
 // configuration ===============================================================
 mongoose.set('useNewUrlParser', true);

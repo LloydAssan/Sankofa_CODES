@@ -1139,3 +1139,27 @@ ul, ol {
     text-decoration: none;
     font-size: 21px;
 }
+
+#msgboard{
+  border: 1px solid black;
+  background-color: white;
+}
+
+#editor{
+  border: 1px solid black;
+  position: relative;
+  min-height: 400px;
+  background-color: white;
+  text-align: left;
+}
+
+a {
+  display: block;
+  color: #428bca;
+  margin: 10px;
+}
+
+.container{
+  width: inherit;
+    background-color: blanchedalmond;
+}
