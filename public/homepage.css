@@ -1152,14 +1152,3 @@ ul, ol {
   background-color: white;
   text-align: left;
 }
-
-a {
-  display: block;
-  color: #428bca;
-  margin: 10px;
-}
-
-.container{
-  width: inherit;
-    background-color: blanchedalmond;
-}
