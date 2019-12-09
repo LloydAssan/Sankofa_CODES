@@ -310,6 +310,7 @@ h1, h2, h3, h4, h5,
 .site-footer {
   padding: 4em 0;
   background: #333333; }
+
   @media (min-width: 768px) {
     .site-footer {
       padding: 8em 0; } }
@@ -468,6 +469,7 @@ h1, h2, h3, h4, h5,
   position: relative;
   width: 100%;
   padding: 1rem; }
+
   @media (max-width: 991.98px) {
     .site-navbar {
       padding-top: 3rem;
@@ -486,6 +488,7 @@ h1, h2, h3, h4, h5,
     z-index: 3;
     font-family: "Anton", sans-serif;
     letter-spacing: .2rem; }
+
     @media (max-width: 991.98px) {
       .site-navbar .site-logo {
         float: left;
@@ -1151,4 +1154,22 @@ ul, ol {
   min-height: 400px;
   background-color: white;
   text-align: left;
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .img-responsive {
+    width: auto;
+    height: auto;
+  }
+
+  .mb-5, .my-5 {
+    margin-bottom: 0;
+}
+}
+
+@media (min-width: 768px) and (max-width:1024px){
+  .img-responsive {
+    width: auto;
+    height: auto;
+  }
 }
