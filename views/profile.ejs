@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+<head>
+    <title>SANKOFA CODES</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="signup.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,700|Anton" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="magnific-popup.css">
+    <link rel="stylesheet" href="jquery-ui.css">
+    <link rel="stylesheet" href="owl.carousel.min.css">
+    <link rel="stylesheet" href="owl.theme.default.min.css">
+    <link rel="stylesheet" href="bootstrap-datepicker.css">
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="aos.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="homepage.css">
+</head>
+<body>
+  <header class="site-navbar js-sticky-header site-navbar-target navbar navbar-expand-lg navbar-light bg-light" role="banner">
+    <div class="">
+      <div class="row align-items-center position-relative">
+          <div class="site-logo ml-5">
+            <a href="/" class="text-black"><span class="text-primary">SANKOFA CODES</a>
+            <img class="logo"src="img/sclogo.png" alt="">
+            <nav class="site-navigation text-center ml-auto" role="navigation">
+              <ul class="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block">
+                <li><a href="/" class="nav-link">ABOUT</a></li>
+                <li><a href="/" class="nav-link">MISSION</a></li>
+                <li><a href="/dashboard" class="nav-link">DASHBOARD</a></li>
+                <li><a href="/" class="nav-link">CONTACT</a></li>
+                <li><a href="/logout">LOGOUT</a></li>
+
+
+              </ul>
+            </nav>
+          </div>
+
+        <div class="toggle-button d-inline-block d-lg-none"><a href="#" class="site-menu-toggle py-5 js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+      </div>
+    </div>
+  </header>
+
+<div class="container text-center">
+
+  <div class="questSec">
+    <div class="" id="msgboard">
+        <h3>QUESTIONS</h3>
+        <ul class="messages">
+        <% for(var i=0; i<messages.length; i++) { %>
+          <li class="message">
+            <span><%= messages[i].name %></span>
+            <span><%= messages[i].msg %></span>
+            <span class="delete" aria-hidden="true">Delete</span>
+          </li>
+        <% } %>
+        </ul>
+
+        <h2>What is your question for today?</h2>
+      <% if (user.local.email) { %>
+        <form action="/profile" method="POST">
+          <input type="text" value="<%= user.local.email %>" name="name">
+          <input type="text" placeholder="Ask question here" name="question">
+          <!-- <input type="number" placeholder="calories" name="msg"> -->
+          <button type="submit">Submit</button>
+          <h4>Use Dashboard link to check answers</h4>
+        </form>
+      </div>
+    </div>
+
+      <div id="editor">
+          <p>Type code here</p>
+          .a { background: white; .b {
+            color: #f00;
+          }
+        }
+      </div>
+
+
+
+
+            <!-- THIS SECTION IS FOR THE VIDEOS -->
+            <h3>FREE TUTORIALS</h3>
+            <section>
+              <h2>HTML Crash Course For Absolute Beginners</h2>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/UB1O30fR-EE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </section>
+
+            <section>
+              <h2>CSS Crash Course For Absolute Beginners</h2>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/yfoY53QXEnI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </section>
+
+            <section>
+              <h2>JAVASCRIPT Crash Course For Absolute Beginners</h2>
+              <iframe width="560" height="315" src="https:/www.youtube.com/embed/PkZNo7MFNFg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </section>
+        </div>
+
+        </div> -->
+        <% } %>
+</div>
+</div>
+
+
+<!-- Text Editor section -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/ace/1.2.3/noconflict/ace.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/ace/1.2.3/noconflict/theme-clouds.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/ace/1.2.3/noconflict/mode-less.js"></script>
+
+<script src="main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+</head>
+<body>
+<div class="container">
+
+    <!-- this is the header -->
+    <div class="page-header text-center">
+        <h1><span>Welcome to </span> SANKOFA CODES</h1>
+        <!-- <h1><span class="fa fa-tablet"></span> </h1> -->
+        <a href="/logout" class="btn btn-default btn-sm">Logout</a>
+    </div>
+    <div class="row">
+        <!-- LOCAL INFORMATION -->
+        <div class="col-sm-6">
+            <div class="well">
+        <div class="col-sm-6" id="msgboard">
+          <h3>Questions</h3>
+          <ul class="messages">
+          <% for(var i=0; i<answers.length; i++) { %>
+            <li class="message">
+              <a href="#"><span><%= answers[i].name %></span></a>
+              <a href="#"><span><%= answers[i].answer %></span></a>
+
+            </li>
+          <% } %>
+          </ul>
+
+</div>
+
+</body>
+</html>

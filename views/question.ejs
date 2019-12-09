@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+  <title>CODE GHANA</title>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="signup.css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,700|Anton" rel="stylesheet">
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="magnific-popup.css">
+  <link rel="stylesheet" href="jquery-ui.css">
+  <link rel="stylesheet" href="owl.carousel.min.css">
+  <link rel="stylesheet" href="owl.theme.default.min.css">
+  <link rel="stylesheet" href="bootstrap-datepicker.css">
+  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+  <link rel="stylesheet" href="aos.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="homepage.css">
+</head>
+<body>
+  <header class="site-navbar js-sticky-header site-navbar-target navbar navbar-expand-lg navbar-light bg-light" role="banner">
+    <div class="">
+      <div class="row align-items-center position-relative">
+          <div class="site-logo ml-5">
+            <a href="/" class="text-black"><span class="text-primary">SANKOFA CODES</a>
+            <img class="logo"src="img/sclogo.png" alt="">
+            <nav class="site-navigation text-center ml-auto" role="navigation">
+              <ul class="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block">
+                <li><a href="/" class="nav-link">ABOUT</a></li>
+                <li><a href="/" class="nav-link">MISSION</a></li>
+                <li><a href="/" class="nav-link">CONTACT</a></li>
+                <li><a href="/dashboard" class="nav-link">DASHBOARD</a></li>
+                <li><a href="/logout">LOGOUT</a></li>
+              </ul>
+            </nav>
+          </div>
+      </div>
+    </div>
+  </header>
+
+<h1 class="question form-group"><%= question.question %></h1>
+
+<section class="form form-group">
+<form action="/answer" method="POST">
+<input type="hidden" name="num" value="<%= num %>">
+<input type="text" name="answer">
+<button type="submit" name="button" class="answerBtn">Answer</button>
+</form>
+</section>
+
+<!--this line of code takes each question from the iteration and shows whichever we clicked on -->
+<% for (let i = 0; i < question.answers.length; i++) { %>
+  <li>
+    <%= question.answers[i] %>
+  </li>
+<% } %>
+
+<!--this line of code takes each answer that is connected to the answer index the user clicked on -->
+<% for (let i = 0; i < answers.length; i++) { %>
+  <li>
+    <%= answers[i].answer %>
+  </li>
+<% } %>
+
+<script src="/answer.js" charset="utf-8"></script>
+
+</body>
+</html>

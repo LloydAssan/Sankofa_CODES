@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+  <title>CODE GHANA</title>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="signup.css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,700|Anton" rel="stylesheet">
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="magnific-popup.css">
+  <link rel="stylesheet" href="jquery-ui.css">
+  <link rel="stylesheet" href="owl.carousel.min.css">
+  <link rel="stylesheet" href="owl.theme.default.min.css">
+  <link rel="stylesheet" href="bootstrap-datepicker.css">
+  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+  <link rel="stylesheet" href="aos.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="homepage.css">
+</head>
+<body>
+  <header class="site-navbar js-sticky-header site-navbar-target navbar navbar-expand-lg navbar-light bg-light" role="banner">
+    <div class="">
+      <div class="row align-items-center position-relative">
+          <div class="site-logo ml-5">
+            <a href="/" class="text-black"><span class="text-primary">SANKOFA CODES</a>
+            <img class="logo"src="img/sclogo.png" alt="">
+            <nav class="site-navigation text-center ml-auto" role="navigation">
+              <ul class="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block">
+                <li><a href="/" class="nav-link">ABOUT</a></li>
+                <li><a href="/" class="nav-link">MISSION</a></li>
+                <li><a href="/" class="nav-link">CONTACT</a></li>
+                <li><a href="/logout">LOGOUT</a></li>
+              </ul>
+            </nav>
+          </div>
+      </div>
+    </div>
+  </header>
+
+      <div class="container text-center">
+          <div class="row">
+                  <div class="questSec">
+                    <div class="" id="msgboard">
+                      <h3>Questions</h3>
+                      <ul class="messages">
+                        <% for(var i=0; i<questions.length; i++) { %>
+                          <li class="message">
+                            <span><%= questions[i].name %>: </span>
+                            <a href="/questions?question=<%= i %>"><span><%= questions[i].question %></span></a>
+                          </li>
+                          <% } %>
+                        </ul>
+                      </div>
+                    </div>
+          </div>
+      </div>
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
