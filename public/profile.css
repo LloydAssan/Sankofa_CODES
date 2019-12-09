@@ -66,18 +66,9 @@ button:hover{
   cursor: pointer;
 }
 
-#msgboard{
-  border: 1px solid black;
-  background-color: white;
-}
 
-#editor{
-  border: 1px solid black;
-  position: relative;
-  min-height: 400px;
-  background-color: white;
-  text-align: left;
-}
+
+
 
 a {
   display: block;
@@ -87,7 +78,7 @@ a {
 
 .container{
   width: inherit;
-    background-color: blanchedalmond;
+  background-color: blanchedalmond;
 }
 
 
