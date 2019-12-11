@@ -43,7 +43,7 @@
 
 <section class="form-pro form-group">
 <form class="" action="/answer" method="POST">
-<!-- <input type="hidden" name="num" value="<%= num %>"> -->
+<input type="hidden" name="num" value="<%= num %>">
 <input type="text" placeholder="Enter Answer Here"name="answer">
 <button type="submit" name="button" class="answerBtn">Answer</button>
 </form>
@@ -61,7 +61,6 @@
 </ol>
 
 <ol>
-<!--this line of code takes each answer that is connected to the answer index the user clicked on -->
 <% for (let i = 0; i < answers.length; i++) { %>
   <li class="list">
     <%= answers[i].answer %>

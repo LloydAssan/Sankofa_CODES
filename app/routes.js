@@ -122,8 +122,11 @@ module.exports = function(app, passport, db, multer, ObjectId) {
 
     // mentors individual questions board routes ===============================================================
     app.get('/questions', isLoggedIn, function(req, res) {
+
       db.collection('questions').find().toArray((err, result) => {
+        console.log('results', result)
         db.collection('answers').find({questionId: req.query.question}).toArray((err, answer) => {
+            console.log('answer', answer)
             res.render('question.ejs', {
               question: result[req.query.question],
               num: req.query.question,
