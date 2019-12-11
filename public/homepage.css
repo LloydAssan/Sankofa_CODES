@@ -1156,8 +1156,14 @@ ul, ol {
   text-align: left;
 }
 
-form{
-  
+.form-pro{
+  margin-left: 43%;
+}
+
+.list{
+  color: black;
+  font-size: large;
+  text-align: center;
 }
 
 @media (min-width: 0px) and (max-width: 767px) {

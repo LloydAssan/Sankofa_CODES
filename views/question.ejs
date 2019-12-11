@@ -38,30 +38,38 @@
       </div>
     </div>
   </header>
-
+<div class="container">
 <h1 class="question form-group"><%= question.question %></h1>
 
-<section class="form form-group">
-<form class=""action="/answer" method="POST">
-<input type="hidden" name="num" value="<%= num %>">
+<section class="form-pro form-group">
+<form class="" action="/answer" method="POST">
+<!-- <input type="hidden" name="num" value="<%= num %>"> -->
 <input type="text" placeholder="Enter Answer Here"name="answer">
 <button type="submit" name="button" class="answerBtn">Answer</button>
 </form>
 </section>
 
-<!--this line of code takes each question from the iteration and shows whichever we clicked on -->
+
+
+<ol>
+  <!--this line of code takes each question from the iteration and shows whichever we clicked on -->
 <% for (let i = 0; i < question.answers.length; i++) { %>
-  <li>
+  <li class="list">
     <%= question.answers[i] %>
   </li>
 <% } %>
+</ol>
 
+<ol>
 <!--this line of code takes each answer that is connected to the answer index the user clicked on -->
 <% for (let i = 0; i < answers.length; i++) { %>
-  <li>
+  <li class="list">
     <%= answers[i].answer %>
   </li>
 <% } %>
+</ol>
+</div>
+
 
 <script src="/answer.js" charset="utf-8"></script>
 

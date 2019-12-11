@@ -56,11 +56,11 @@
             <span class="delete" aria-hidden="true">Delete</span>
           </li>
         <% } %>
-      </ol>
+        </ol>
 
         <h2>What is your question for today?</h2>
       <% if (user.local.email) { %>
-        <form action="/profile" method="POST">
+        <form class="" action="/profile" method="POST">
           <input type="text" value="<%= user.local.email %>" name="name">
           <input type="text" placeholder="Ask question here" name="question">
           <!-- <input type="number" placeholder="calories" name="msg"> -->
